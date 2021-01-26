@@ -32,9 +32,9 @@ static inline bool pieceValidateEmpty(const int piece) {
 }
 
 static inline bool pieceValidate(const int piece) {
-	#ifdef DEBUG
-		fprintf(stderr, "piece: %d\n", piece);
-	#endif
+	// #ifdef DEBUG
+	// 	fprintf(stderr, "piece: %d\n", piece);
+	// #endif
     return (piece >= whitePwn && piece <= blackKing);
 }
 
