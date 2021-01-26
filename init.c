@@ -22,7 +22,7 @@ U64Int castleKey[16];
 void initFilesRanksBoard() {
     int file = FILE_A;
     int rank = RANK_1;
-    int square = 0;
+    int square = A1;
     int square64 = 0;
     int index = 0;
 

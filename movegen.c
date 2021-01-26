@@ -120,9 +120,9 @@ void generateAllMoves(const board *position, movelist *list) {
     int square = 0;
     int targetSquare = 0;
     int pieceNumber = 0;
-    int direction;
-    int index;
-    int pieceIndex;
+    int direction = 0;
+    int index = 0;
+    int pieceIndex = 0;
 
     if(boardSide == WHITE) {
         for(pieceNumber = 0; pieceNumber < position -> numberOfPieces[whitePwn]; pieceNumber++) {

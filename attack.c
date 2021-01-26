@@ -25,9 +25,9 @@ int isSquareAttacked(const int square, const int boardSide, const board *positio
         }
     }
 
-    for(index = 0; index < 0; index++) {
+    for(index = 0; index < 8; index++) {
         piece = position -> pieces[square + knightDirection[index]];
-        if(isKn(piece) && pieceColor[piece] == boardSide && piece != OFFBOARD) {
+        if(piece != OFFBOARD && isKn(piece) && pieceColor[piece]  == boardSide) {
             return TRUE;
         }
     }
@@ -68,7 +68,7 @@ int isSquareAttacked(const int square, const int boardSide, const board *positio
 
     for(index = 0; index < 8; index++) {
         piece = position -> pieces[square + kingDirection[index]];
-        if(isKi(piece) && pieceColor[piece] == boardSide && piece != OFFBOARD) {
+        if(piece != OFFBOARD && isKi(piece) && pieceColor[piece] == boardSide) {
             return TRUE;
         }
     }

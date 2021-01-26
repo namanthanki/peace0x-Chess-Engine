@@ -46,7 +46,7 @@ int checkBoard(const board *position) {
         tmpMaterial[color] += pieceValue[tmpPiece];
     }
 
-    for(tmpPiece = whitePwn; tmpPiece < blackKing; tmpPiece++) {
+    for(tmpPiece = whitePwn; tmpPiece <= blackKing; tmpPiece++) {
         ASSERT(tmpNumberOfPieces[tmpPiece] == position -> numberOfPieces[tmpPiece]);
     }
 

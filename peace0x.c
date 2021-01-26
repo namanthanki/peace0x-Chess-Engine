@@ -22,6 +22,8 @@
 #define CASTLE1 "r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1"
 #define CASTLE2 "3rk2r/8/8/8/8/8/6p1/R3K2R b KQk - 0 1"
 #define TRICKYCASTLE "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1"
+#define GOODTESTPOSITION "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1"
+#define DISCOVERPROMOTIONBUGS "n1n5/PPPk4/8/8/8/8/4Kppp/5N1N b - - 0 1"
 
 /*******||
 ----Main||
@@ -33,8 +35,8 @@ int main(void) {
     board newBoard[1];
     movelist newList[1];
 
-    parseFEN(START_FEN, newBoard);
-    perftTest(5, newBoard);
+    parseFEN("r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1", newBoard);
+    perftTest(4, newBoard);
 
     return 0;
 }

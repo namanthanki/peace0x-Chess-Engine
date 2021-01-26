@@ -282,6 +282,7 @@ void takeMove(board *position) {
                 break;
             case G8: 
                 movePiece(F8, H8, position);
+                break;
             default: 
                 ASSERT(FALSE);
                 break;

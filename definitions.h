@@ -208,7 +208,6 @@ extern int pieceSlides[13];
 ***********/
 
 extern void allInit();
-extern void initHashKeys();
 
 /**************||
 ----bitboards.c||
